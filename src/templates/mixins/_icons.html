@@ -1,0 +1,9 @@
+{% macro icon(i, iconClass) %}
+  {% set className = '' %}
+  {% if iconClass %}
+    {% set className = ' ' + iconClass %}
+  {% endif %}
+  <svg class="icon icon-{{ i }}{{ className }}">
+    <use href="img/sprite.svg#icon-{{ i }}" xlink:href="img/sprite.svg#icon-{{ i }}"></use>
+  </svg>
+{% endmacro %}

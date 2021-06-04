@@ -1,0 +1,33 @@
+body
+  +font-default
+  font-size: $fz-default
+  color: #000000
+  background-color: #ffffff
+  line-height: 1.4
+  //overflow: hidden
+
+  &.is-modal-opened
+    //position: fixed
+    overflow: hidden
+    left: 0
+    top: 0
+    width: 100%
+
+  &.is-zoom-disabled
+    .zoomContainer
+      pointer-events: none
+
+  &.is-filter-opened
+    +md
+      .header
+        z-index: 2
+
+  &.is-dropdown-opened
+    .product-bar-buy
+      z-index: 7
+    .to-top
+      z-index: 1
+
+  &.is-header-open
+    .product-bar-buy
+      z-index: 9

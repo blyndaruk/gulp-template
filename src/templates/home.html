@@ -1,0 +1,22 @@
+---
+title: Home page
+pageClass: home-page
+---
+
+{% extends "layouts/_layout.html" %}
+{% block fonts %}
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  {% include 'layouts/_header.html' %}
+
+  <main class="page {{ pageClass }}">
+    main
+    <img src="img/placeholder.webp" data-src="img/placeholder.png" alt="lazy placeholder">
+    {{ mixins.icon('android') }}
+  </main>
+
+  {% include 'layouts/_footer.html' %}
+
+{% endblock %}

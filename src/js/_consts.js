@@ -1,0 +1,31 @@
+export const DOM = {
+  body: document.querySelector('body'),
+  html: document.querySelector('html'),
+  $body: $('body'),
+  $window: $(window),
+  $burger: $('.js-burger'),
+  $header: $('.js-header'),
+  $menu: $('.js-mob-menu'),
+  $out: $('.js-out'),
+  $moveScrollEl: $('.js-move-scroll'),
+  window,
+};
+
+export const CLASSES = {
+  isActive: 'is-active',
+  isVisible: 'is-visible',
+  isDisabled: 'is-disabled',
+  isHidden: 'is-hidden',
+  isFixed: 'is-fixed',
+  isOpen: 'is-open',
+  isError: 'is-error',
+  isExpanded: 'is-expanded',
+  isDarkMode: 'is-dark',
+  isFooter: 'is-footer',
+  modalOpened: 'is-modal-opened',
+  isSticky: 'is-sticky',
+  isOut: 'is-out',
+  isHeaderOpen: 'is-header-open',
+  isDropdownOpened: 'is-dropdown-opened',
+  isZoomDisabled: 'is-zoom-disabled',
+};

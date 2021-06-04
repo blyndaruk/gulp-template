@@ -1,0 +1,24 @@
+{% import 'mixins/index.html' as mixins %}
+
+
+{% macro button(args) %}
+<button class="button{% if args.modifier %} {{ args.modifier }}{% endif %} {% if args.modal %} js-modal-link{% endif %}" aria-label="{{ args.title }}" {% if args.modal %}data-modal-target="{{ args.modal }}"{% endif %}>
+  {% if args.leftIcon %}
+    <i class="button__icon">{{ mixins.icon(args.leftIcon) }}</i>
+  {% endif %}
+  <span class="button__text">{{ args.title | safe }}</span>
+  {% if args.icon %}
+    <i class="button__icon">{{ mixins.icon(args.icon) }}</i>
+  {% endif %}
+</button>
+{% endmacro %}
+
+
+{% macro button_link(args) %}
+<a href="{{ args.href }}" class="button{% if args.modifier %} {{ args.modifier }}{% endif %} {% if args.modal %} js-modal-link{% endif %}" {% if args.modal %}data-modal-target="{{ args.modal }}"{% endif %}>
+  <span class="button__text">{{ args.title | safe }}</span>
+  {% if args.icon %}
+    <i class="button__icon">{{ mixins.icon(args.icon) }}</i>
+  {% endif %}
+</a>
+{% endmacro %}
