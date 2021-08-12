@@ -1,0 +1,15 @@
+{% set title = 'Home page' %}
+
+{% extends "@layouts/_layout.twig" %}
+
+{% block content %}
+  {% include '@layouts/_header.twig' %}
+
+  <main class="page {{ pageClass }}">
+    Main Page
+    <br>
+    <img src="img/placeholder.webp" data-src="img/placeholder.png" alt="lazy placeholder">
+  </main>
+
+  {% include '@layouts/_footer.twig' %}
+{% endblock %}

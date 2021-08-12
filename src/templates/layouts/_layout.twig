@@ -1,0 +1,29 @@
+{% from "@mixins/icon.twig" import icon %}
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+
+  {% include '@layouts/_meta.twig' %}
+
+  {% block fonts %}{% endblock %}
+
+  <link rel="stylesheet" media="all" href="css/app.css"/>
+  {% if stylesFile %}
+    <link rel="stylesheet" media="all" href="css/{{ stylesFile }}.css"/>
+  {% endif %}
+</head>
+
+
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+  <div class="out js-out{% if outClass %} {{ outClass }}{% endif %}">
+    <div class="overlay js-overlay"></div>
+    {% block content %}{% endblock %}
+  </div>
+
+  <script src="js/app.js"></script>
+  {% block page_scripts %}{% endblock %}
+</body>
+</html>

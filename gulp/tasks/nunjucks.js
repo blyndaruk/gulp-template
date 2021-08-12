@@ -24,7 +24,7 @@ const renderHtml = onlyChanged => {
     .pipe(nunjucksRender({
         PRODUCTION: config.production,
         path: [config.src.templates],
-        ext: config.production ? '.php' : '.html'
+        ext: '.html'
     }))
     .pipe(prettify({
         indent_size: 2,

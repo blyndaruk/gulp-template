@@ -1,0 +1,13 @@
+{% set title = 'Example page' %}
+
+{% extends "@layouts/_layout.twig" %}
+
+{% block content %}
+  {% include '@layouts/_header.twig' %}
+
+  <main class="page {{ pageClass }}">
+    Example Component Page
+  </main>
+
+  {% include '@layouts/_footer.twig' %}
+{% endblock %}

@@ -1,0 +1,42 @@
+// TODO: create just project colors and move them to CSS Variables
+
+$theme: #AA0D1E;
+
+// gray palette
+$G-0: #ffffff;
+$G-1: #F7F7F7;
+$G-2: #F9F9F9;
+$G-3: #dcdcdc;
+$G-4: #888888;
+$G-5: #444444;
+$G-6: #333333;
+
+// green
+$green-0: #31945E;
+
+// blue palette
+$blue-0: #EAF5FF;
+$blue-1: #AECBE4;
+
+$red: #C64344;
+$red_hover: #B6303E;
+$dark_red: #B6303E;
+$yellow: #EFC900;
+
+// buttons
+$button_primary_bg: $red;
+$button_primary_hover: #B6303E;
+$button_secondary: $red;
+
+// fields
+$input_border: #e0e0e0;
+$input_border_focus: $G-4;
+$input_border_placeholder: $G-4;
+$select: $G-4;
+$error: $red;
+
+$border-dashed-gray: 1px dashed rgba(68, 68, 68, 0.5);
+$border-hover-color: rgba(198, 67, 68, 0.5);
+
+$overlay: rgba(6, 27, 57, 0.6);
+
